@@ -1,6 +1,6 @@
 # Classifying Textual Data with pretrained Vision Models through Transfer Learning and Data Transforms
 
-## Desscription
+## Description
 
 Code for the paper Classifying Textual Data with pretrained Vision Models through Transfer Learning and Data Transformations by: Charaf Eddine Benarab
 
@@ -11,6 +11,7 @@ Email : charafeddineben@gmail.com
 ## Dependencies
 
 Pytorch >= 1.9.1+cu102, PyDeepInsight, transformers
+
 The IMDB dataset is uploaded with the source code on this repository. 
 
 ## BERT Representations
@@ -38,6 +39,6 @@ Visualization of the image data is available throuh the "Data Visualization .ipy
 cd ../.. && python main-train.py
 ```
 
-will launch training for the selected model through direct import from the ./models folder.
+will launch training for the selected model through direct import from the ./models folder. 
 each training will output a a record for validation loss and accuracy during 15 epochs.
 
