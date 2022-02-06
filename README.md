@@ -3,7 +3,9 @@
 ## Desscription
 
 Code for the paper Classifying Textual Data with pretrained Vision Models through Transfer Learning and Data Transformations by: Charaf Eddine Benarab
-Preprint [@Link](https://arxiv.org/abs/2106.12479)
+
+[Preprint Link](https://arxiv.org/abs/2106.12479)
+
 Email : charafeddineben@gmail.com
 
 ## Dependencies
