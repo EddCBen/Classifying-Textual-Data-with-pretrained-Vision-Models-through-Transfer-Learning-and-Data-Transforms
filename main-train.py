@@ -1,3 +1,9 @@
+""""
+Training Script for Models in ./models
+import model according to : from models.model_name import model_name
+initialize model in create_model : line 56
+
+"""
 import torch
 import torch.optim as optim
 import torch.nn as nn
