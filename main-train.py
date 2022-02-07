@@ -1,7 +1,7 @@
 """"
 Training Script for Models in ./models
 import model according to : from models.model_name import model_name
-initialize model in create_model : line 56
+initialize model in create_model() : line 56
 
 """
 import torch
