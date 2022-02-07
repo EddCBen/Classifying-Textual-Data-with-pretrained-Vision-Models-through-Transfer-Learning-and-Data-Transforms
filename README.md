@@ -12,6 +12,8 @@ Email : charafeddineben@gmail.com
 
 Pytorch >= 1.9.1+cu102, PyDeepInsight, transformers
 
+The pretrained Vision models are imported from torchvision (requires install)
+
 The IMDB dataset is uploaded with the source code on this repository. 
 
 ## BERT Representations
