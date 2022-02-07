@@ -2,7 +2,7 @@
 
 ## Description
 
-Code for the paper : [Classifying Textual Data with pretrained Vision Models through Transfer Learning and Data Transformations by: Charaf Eddine Benarab(https://arxiv.org/abs/2106.12479)
+Code for the paper : [Classifying Textual Data with pretrained Vision Models through Transfer Learning and Data Transformations by: Charaf Eddine Benarab](https://arxiv.org/abs/2106.12479)
 
 Email : charafeddineben@gmail.com
 
