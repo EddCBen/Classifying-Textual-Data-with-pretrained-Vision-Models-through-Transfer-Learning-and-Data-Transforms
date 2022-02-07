@@ -19,6 +19,7 @@ The IMDB dataset is uploaded with the source code on this repository.
 ```
 cd data/ && python bert_rep_gen.py
 ```
+This produces a file containing 50k representations obtained from the last 6 pretrained layers of [BERT-base-uncased from HuggingFace](https://huggingface.co/bert-base-uncased).
 
 A file with the name "IMDB_cls_last6layers.pt" should be created in the ./data folder.
 
@@ -32,7 +33,7 @@ cd imdb_image/ && pyhton deepinsight_imdb.py
 
 This will create a "Ready_images-six2elev.pt" file in the current folder, containing 50k 50x50x3 Pytorch Tensors.
 Visualization of the image data is available through the "Data Visualization .ipynb" Jupyter Notebook.
-
+Guide for using DeepInsight to generate an image dataset through t-SNE projection can be found [here](https://github.com/alok-ai-lab/DeepInsight).
 ## Training 
 
 ```
