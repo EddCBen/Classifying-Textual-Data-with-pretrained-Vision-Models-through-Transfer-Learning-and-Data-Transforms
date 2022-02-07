@@ -31,7 +31,7 @@ cd imdb_image/ && pyhton deepinsight_imdb.py
 ```
 
 This will create a "Ready_images-six2elev.pt" file in the current folder, containing 50k 50x50x3 Pytorch Tensors.
-Visualization of the image data is available throuh the "Data Visualization .ipynb" Jupyter Notebook.
+Visualization of the image data is available through the "Data Visualization .ipynb" Jupyter Notebook.
 
 ## Training 
 
