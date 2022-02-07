@@ -76,29 +76,34 @@ optimizer = optim.Adam([{'params': model.feature_extractor.parameters()},
 criterion = nn.CrossEntropyLoss()
 
 def opt_model()-> None:
+	"""
+	Optimization Function 
+	"""
     optimizer.zero_grad()
     loss.backward() #Global Var 
     optimizer.step()
 
 upsample = nn.Upsample(scale_factor = 3, mode = "nearest")              
 
-"""
-scale_image_batch : A Function to resize the input images to fit
+def scale_image_batch(image_batch) -> torch.Tensor:
+	"""
+	scale_image_batch : A Function to resize the input images to fit
                     The input layer of the pretrained model, and adjust
                     the shape according to : [B,W,H,C] ----> [B,C,W,H]
-"""
-def scale_image_batch(image_batch) -> torch.Tensor:
+	"""
+	
     a = torch.movedim(image_batch, -1,1)
     scaled_batch = upsample(a)
     return scaled_batch.cuda()
 
-"""
-z_normalize : applies Z-Normalization (Described in the paper) to adjust 
-                image contrast by moving it to a clearer pixel space.
 
-"""
 
 def z_normalize(input_tensor) -> torch.Tensor:
+	"""
+	z_normalize : applies Z-Normalization (Described in the paper) to adjust 
+                image contrast by moving it to a clearer pixel space.
+
+	"""
     mean = input_tensor.mean()
     std = input_tensor.std()
     up = torch.sub(input_tensor, mean)
